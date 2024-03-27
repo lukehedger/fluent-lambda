@@ -6,9 +6,11 @@
   "type": "module",
   "scripts": {
     "cdk": "npx cdk",
-    "test": "bun test"
+    "test": "LOG_LEVEL=SILENT bun test"
   },
   "dependencies": {
+    "@aws-lambda-powertools/logger": "2.0.3",
+    "@aws-lambda-powertools/tracer": "2.0.3",
     "sloth-pipe": "^0.0.7"
   },
   "devDependencies": {
