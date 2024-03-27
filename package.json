@@ -1,0 +1,23 @@
+{
+  "name": "fluent-lambda",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fluent Lambda functions",
+  "type": "module",
+  "scripts": {
+    "cdk": "npx cdk",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "sloth-pipe": "^0.0.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.6.3",
+    "@tsconfig/node20": "20.1.4",
+    "@types/node": "20.11.30",
+    "aws-cdk-lib": "2.134.0",
+    "bun-types": "1.0.35",
+    "tsx": "4.7.1",
+    "typescript": "5.4.3"
+  }
+}
