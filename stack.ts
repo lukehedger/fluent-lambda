@@ -10,7 +10,7 @@ export class FluentFunction extends Stack {
     new NodejsFunction(this, "FluentFunction", {
       architecture: Architecture.ARM_64,
       bundling: {
-        format: OutputFormat.ESM,
+        format: OutputFormat.CJS,
         minify: true,
         sourceMap: true,
         target: "esnext",
