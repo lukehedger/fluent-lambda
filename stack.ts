@@ -10,7 +10,8 @@ export class FluentFunction extends Stack {
     new NodejsFunction(this, "FluentFunction", {
       architecture: Architecture.ARM_64,
       bundling: {
-        format: OutputFormat.CJS,
+        banner: "import { createRequire } from 'module';const require = createRequire(import.meta.url);",
+        format: OutputFormat.ESM,
         minify: true,
         sourceMap: true,
         target: "esnext",
